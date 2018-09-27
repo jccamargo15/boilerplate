@@ -25,3 +25,7 @@ html, body {
 #main-menu .nav-link.active {
     background-color: #343a40;
 }
+
+#content {
+    padding-top: 20px;
+}
