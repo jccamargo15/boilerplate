@@ -27,7 +27,7 @@
                     <li class="nav-item"><a href="" class="nav-link">Usuários</a></li>
                 </ul>
             </div>
-            <div class="col-10">
+            <div id="content" class="col-10">
                 <?php include $content; ?>
             </div>
         </div>
