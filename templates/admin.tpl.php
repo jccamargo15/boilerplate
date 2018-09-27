@@ -7,11 +7,31 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>Painel Administrativo do Site!</title>
 </head>
-<body>
-<?php include $content ?>
+<body class="d-flex flex-column">
+    <div id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="" class="navbar-brand">AdminSITE</a>
+            <span class="navbar-text">Painel Administrativo do Site</span>
+        </nav>
+    </div>
+    <div id="main">
+        <div class="row">
+            <div class="col">
+                <ul id="main-menu" class="nav flex-column nav-pills bg-secondary text-white p-2">
+                    <li class="nav-item"><span href="" class="nav-link text-white-50"><small>MENU</small></span></li>
+                    <li class="nav-item"><a href="" class="nav-link active">Páginas</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Usuários</a></li>
+                </ul>
+            </div>
+            <div class="col-10">
+                <?php include $content; ?>
+            </div>
+        </div>
+    </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
